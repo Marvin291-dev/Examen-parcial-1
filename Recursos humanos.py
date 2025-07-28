@@ -1,5 +1,4 @@
-
-#Empleados = {}
+Empleados = {}
 class Persona:
     def _init_(self, Codigo, nombre, departamento, años):
         self.Codigo = Codigo
@@ -16,7 +15,6 @@ class Persona:
             "Años": self.años
         }
 
-Empleados = {}
 def Agregar_Empleado():
     Codigo = int(input("Ingrese el Codigo de Empleado: "))
     nombre = input("Ingrese el nombre del Empleado: ")
@@ -26,7 +24,7 @@ def Agregar_Empleado():
     Empleados[Codigo] = trabajador
     print("Empleado agregado exitosamente")
     #def Informacion(self):
-def menu():
+
     while True:
         print("\n Bienvenido al Recurso de Empleados")
         print("1. Regitro de Empleados: ")
@@ -40,5 +38,4 @@ def menu():
             print("👋 Programa finalizado.")
             break
         else:
-            print("❌ Opción inválida.\n")
-menu()
+            print("Opción inválida.")
